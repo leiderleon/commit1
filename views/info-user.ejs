@@ -9,86 +9,86 @@
     <title>Info</title>
 </head>
 
-<body class="bg-success d-flex justify-content-center align-items-center vh-100" style="--bs-bg-opacity: .5">
+<body class="bg-warning d-flex justify-content-center align-items-center vh-100" style="--bs-bg-opacity: .5">
     <!-- Contenido -->
     <div>
         <h1 class="text-center">Informacion del usuario</h1>
         <!-- Datos del usuario -->
-        <form class="bg-success d-flex flex-column align-items-center p-4" style="--bs-bg-opacity: .6">
+        <form class="bg-warning d-flex flex-column align-items-center p-4" style="--bs-bg-opacity: .6">
             <div class="row">
                 <!-- Primer nombre -->
                 <div class="col">
                     <label>Primer Nombre</label>
-                    <input type="text" class="form-control" disabled value="">
+                    <input type="text" class="form-control" disabled value="<%= infoUser['1nombre'] %>">
                 </div>
                 <!-- Segundo nombre -->
                 <div class="col">
                     <label>Segundo Nombre</label>
-                    <input type="text" class="form-control"  disabled value="">
+                    <input type="text" class="form-control"  disabled value="<%= infoUser['2nombre'] %>">
                 </div>
             </div>
             <div class="row">
                 <!-- Primer apellido -->
                 <div class="col">
                     <label>Primer Apellido</label>
-                    <input type="text" class="form-control" disabled value="">
+                    <input type="text" class="form-control" disabled value="<%= infoUser['1apellido'] %>">
                 </div>
                 <!-- Segundo apellido -->
                 <div class="col">
                     <label>Segundo Apellido</label>
-                    <input type="text" class="form-control"  disabled value="">
+                    <input type="text" class="form-control"  disabled value="<%= infoUser['2apellido'] %>">
                 </div>
             </div>
             <div class="row">
-                <!-- Telefono -->
+                <!--- Telefono -->
                 <div class="col">
                     <label>Telefono</label>
-                    <input type="text" class="form-control" disabled value="">
+                    <input type="text" class="form-control" disabled value="<%= infoUser['telefono'] %>">
                 </div>
                 <!-- Fecha nacimiento -->
                 <div class="col">
                     <label>Fecha nacimiento</label>
-                    <input type="text" class="form-control"  disabled value="">
+                    <input type="text" class="form-control"  disabled value="<%= infoUser['fechanacimiento'] %>">
                 </div>
             </div>
             <div class="row">
                 <!-- RH -->
                 <div class="col">
                     <label>RH</label>
-                    <input type="text" class="form-control" disabled value="">
+                    <input type="text" class="form-control" disabled value="<%= infoUser['rh'] %>">
                 </div>
                 <!-- Direccion -->
                 <div class="col">
                     <label>Direccion</label>
-                    <input type="text" class="form-control"  disabled value="">
+                    <input type="text" class="form-control"  disabled value="<%= infoUser['direccion'] %>">
                 </div>
             </div>
             <div class="row">
                 <!-- Correo -->
                 <div class="col">
                     <label>Correo</label>
-                    <input type="Email" class="form-control" disabled value="">
+                    <input type="Email" class="form-control" disabled value="<%= infoUser['correo'] %>">
                 </div>
                 <!-- Ciudad -->
                 <div class="col">
                     <label>Ciudad</label>
-                    <input type="text" class="form-control"  disabled value="">
+                    <input type="text" class="form-control"  disabled value="<%= infoUser['ciudad'] %>">
                 </div>
             </div>
             <div class="row">
                 <!-- Numero identificacion -->
                 <div class="col">
                     <label>Numero identificacion</label>
-                    <input type="text" class="form-control" disabled value="">
+                    <input type="text" class="form-control" disabled value="<%= infoUser['nidentificacion'] %>">
                 </div>
                 <!-- Ocupacion -->
                 <div class="col">
                     <label>Ocupacion</label>
-                    <input type="text" class="form-control"  disabled value="">
+                    <input type="text" class="form-control"  disabled value="<%= infoUser['ocupacion'] %>">
                 </div>
             </div>
             <br>
-            <a href="/welcome" class="btn btn-success">Retroceder</a>
+            <a href="/welcome" class="btn btn-warning">Retroceder</a>
         </form>
     </div>
 </body>
